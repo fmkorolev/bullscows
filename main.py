@@ -1,8 +1,8 @@
 from telegram.ext import Updater, CommandHandler, Filters, MessageHandler, ConversationHandler,updater
 import os
 from game import *
+from config import TOKEN
 
-TOKEN = "5782848176:AAEk7enJWVn5SLH6knQE0MY-tgAn-d0R7_w"
 
 token = os.getenv(TOKEN)
 updater = Updater(TOKEN)
@@ -12,7 +12,7 @@ guess = None
 PLAYER, MOVE = 0, 1
 player_name = None
 
-print('Бот работает...')
+print('server started')
 
 
 def start(update, context):
